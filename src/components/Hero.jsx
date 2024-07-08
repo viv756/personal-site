@@ -67,16 +67,16 @@ const Hero = () => {
                 </p>
               </div>
 
-              <div className="order-1  lg:order-2 ">
+              <div className="order-1  lg:order-2 "> 
                 <img
                   src={column}
                   alt=""
-                  className="w-[500px]  right-3 bottom-5 lg:w-[800px] lg:h-[596px] lg:hidden"
+                  className="w-[500px]  right-3 bottom-5 lg:w-[800px] lg:h-[596px] sm:hidden"
                 />
                 <img
                   src={Banner}
                   alt=""
-                  className=" xl:right-3 xl:left-[530px] xl:top-8 xl:w-auto hidden lg:block lg:w-[800px] lg:bottom-1 lg:top-20 lg:right-0 lg:left-80  absolute"
+                  className=" xl:right-3 xl:left-[530px] xl:top-8 xl:w-auto hidden sm:block lg:w-[800px] lg:bottom-1 lg:top-20 lg:right-0 lg:left-80 lg:absolute sm:w-[900px] sm:mt-2 xl:mt-0"
                 />
               </div>
             </div>
