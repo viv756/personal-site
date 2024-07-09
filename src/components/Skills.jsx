@@ -71,9 +71,9 @@ const Skills = () => {
           <h1 className="text-center text-6xl font-sora p-3 ">
             My <span className="font-bold">Skills</span>
           </h1>
-          <div className="p-2 mt-5 min-h-[500px] w-full sm:gap-16 gap-3 grid grid-cols-2 sm:grid-cols-5 ">
+          <div className="p-2 mt-10 min-h-[500px] w-full sm:gap-16 gap-3 grid grid-cols-2 sm:grid-cols-5 ">
             {skills.map((skill) => (
-              <div className="flex flex-col justify-center items-center border border-black h-[200px] ">
+              <div className="flex flex-col justify-center items-center border-2 border-black h-[210px] rounded-lg">
                 <div key={skill.id} className="">
                   <div className="flex justify-center py-2">
                     {React.cloneElement(skill.icon, { size: 50 })}
