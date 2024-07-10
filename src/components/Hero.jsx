@@ -7,13 +7,13 @@ import { BsInstagram } from "react-icons/bs";
 import { IoLogoLinkedin } from "react-icons/io5";
 
 const Hero = () => {
-  const [activeButton, setActiveButton] = React.useState(0);
+  const [activeButton, setActiveButton] = React.useState(1);
 
   const buttons = [
-    { icon: <BiLogoFacebookCircle size={30} />, id: 0 },
-    { icon: <FaGithub size={30} />, id: 1 },
-    { icon: <IoLogoLinkedin size={30} />, id: 2 },
-    { icon: <BsInstagram size={30} />, id: 3 },
+    { icon: <BiLogoFacebookCircle size={30} />, id: 1 },
+    { icon: <FaGithub size={30} />, id: 2 },
+    { icon: <IoLogoLinkedin size={30} />, id: 3 },
+    { icon: <BsInstagram size={30} />, id: 4 },
   ];
 
   

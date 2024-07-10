@@ -11,74 +11,81 @@ import { BiLogoPostgresql } from "react-icons/bi";
 import { SiMongodb } from "react-icons/si";
 
 const Skills = () => {
+  const [skillSelected, setSkillSelected] = React.useState(2);
+
   const skills = [
     {
       id: 1,
       name: "Git",
-      icon: <FaGitAlt />,
+      icon: <FaGitAlt size={57} />,
     },
     {
       id: 2,
-      name: "Javascript",
-      icon: <SiJavascript />,
+      name: "JavaScript",
+      icon: <SiJavascript size={57} />,
     },
     {
       id: 3,
-      name: "Nodejs",
-      icon: <FaNodeJs />,
+      name: "Node.js",
+      icon: <FaNodeJs size={57} />,
     },
     {
       id: 4,
-      name: "Typescript",
-      icon: <SiTypescript />,
+      name: "TypeScript",
+      icon: <SiTypescript size={57} />,
     },
     {
       id: 5,
       name: "React",
-      icon: <FaReact />,
+      icon: <FaReact size={57} />,
     },
     {
       id: 6,
-      name: "NextJs",
-      icon: <SiNextdotjs />,
+      name: "Next.js",
+      icon: <SiNextdotjs size={57} />,
     },
     {
       id: 7,
-      name: "Express",
-      icon: <SiExpress />,
+      name: "Express.js",
+      icon: <SiExpress size={57} />,
     },
     {
       id: 8,
-      name: "SocketIo",
-      icon: <SiSocketdotio />,
+      name: "Socket.IO",
+      icon: <SiSocketdotio size={57} />,
     },
     {
       id: 9,
-      name: "PostgresSql",
-      icon: <BiLogoPostgresql />,
+      name: "PostgreSQL",
+      icon: <BiLogoPostgresql size={57} />,
     },
     {
       id: 10,
       name: "MongoDB",
-      icon: <SiMongodb />,
+      icon: <SiMongodb size={57} />,
     },
   ];
 
   return (
-    <div className="py-10">
+    <div className="py-5 sm:py-10">
       <div className="container">
         <div>
-          <h1 className="text-center text-6xl font-sora p-3 ">
+          <h1 className="text-center sm:text-6xl  text-5xl font-sora p-3 ">
             My <span className="font-bold">Skills</span>
           </h1>
-          <div className="p-2 mt-10 min-h-[500px] w-full sm:gap-16 gap-3 grid grid-cols-2 sm:grid-cols-5 ">
+          <div className="p-2 mt-10 min-h-[500px] w-full xl:gap-0 gap-3 grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 justify-items-center ">
             {skills.map((skill) => (
-              <div className="flex flex-col justify-center items-center border-2 border-black h-[210px] rounded-lg">
-                <div key={skill.id} className="">
-                  <div className="flex justify-center py-2">
-                    {React.cloneElement(skill.icon, { size: 50 })}
+              <div
+                className={`flex flex-col justify-center items-center border-2 border-black h-[186px] w-full sm:h-[190px] sm:w-[190px] rounded-[3px] box-border transition-colors duration-300 ${
+                  skillSelected === skill.id && "bg-black text-white"
+              
+                }`}
+                onClick={() => setSkillSelected(skill.id)}>
+                <div key={skill.id} className="flex flex-col gap-3">
+                  <div className="flex justify-center py-2">{skill.icon}</div>
+                  <div className="font-bold font-sora py-2 text-center">
+                    {skill.name}
                   </div>
-                  <div className="font-bold font-sora py-2 text-center">{skill.name}</div>
                 </div>
               </div>
             ))}
