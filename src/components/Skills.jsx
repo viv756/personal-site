@@ -67,12 +67,12 @@ const Skills = () => {
   ];
 
   return (
-    <div className="py-5 sm:py-10">
+    <div className="py-10">
       <div className="container">
-        <h1 className="text-center   sm:text-[53px] text-5xl font-sora p-3 ">
+        <h1 className="text-center sm:text-[50px] text-4xl font-sora p-3 ">
           My <span className="font-bold">Skills</span>
         </h1>
-        <div className="p-2 mt-10 min-h-[500px] w-full xl:gap-0 gap-3 grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 justify-items-center ">
+        <div className="p-2 sm:mt-16 mt-11 min-h-[500px] w-full xl:gap-0 gap-3 grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 justify-items-center ">
           {skills.map((skill) => (
             <div
               className={`flex flex-col justify-center items-center border-2 border-black h-[186px] w-full sm:h-[190px] sm:w-[190px] rounded-[3px] box-border transition-colors duration-300 ${

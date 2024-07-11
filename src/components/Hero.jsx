@@ -16,11 +16,10 @@ const Hero = () => {
     { icon: <BsInstagram size={30} />, id: 4 },
   ];
 
-  
   return (
     <>
       <div className="py-12 sm:py-0  overflow-hidden">
-        <div className="container">
+        <div className="container ">
           <div className=" min-h-[700px]  relative">
             <div className="grid grid-cols-1 lg:grid-cols-2 place-items-center relative z-10 lg:gap-0 gap-9">
               <div className="order-2 lg:order-1 space-y-4">
@@ -67,7 +66,7 @@ const Hero = () => {
                 </p>
               </div>
 
-              <div className="order-1  lg:order-2 "> 
+              <div className="order-1  lg:order-2 ">
                 <img
                   src={column}
                   alt=""
@@ -86,12 +85,8 @@ const Hero = () => {
                   key={button.id}
                   type="button"
                   onMouseEnter={() => setActiveButton(button.id)}
-                  className={`h-[60px] w-[60px] flex justify-center items-center font-semibold rounded transition-colors duration-300
-                      ${
-                        activeButton === button.id
-                          ? "bg-black text-white"
-                          : "border-solid border-2 border-black text-black hover:bg-black hover:text-white"
-                      }`}>
+                  className={`h-[60px] w-[60px] flex justify-center items-center font-semibold rounded transition-colors duration-300 "border-solid border-2 border-black
+                      ${activeButton === button.id && "bg-black text-white"}`}>
                   {button.icon}
                 </button>
               ))}
@@ -106,3 +101,5 @@ const Hero = () => {
 export default Hero;
 
 //  className=" right-3 bottom-12 w-auto hidden lg:block  absolute"
+//  ? "bg-black text-white"
+//                           : "border-solid border-2 border-black text-black hover:bg-black hover:text-white"
