@@ -60,7 +60,7 @@ const Experiance = () => {
               </div>
               <div className="mt-7">
                 <p className="text-white font-sora">
-                Through self-directed learning, I developed several backend applications to deepen my understanding of MongoDB and its integration into real-world applications. I focused on designing database schemas, implementing CRUD operations, and optimizing queries for performance. Leveraging frameworks like Mongoose, I enhanced my proficiency in schema validation, middleware usage, and managing relationships between data models. Additionally, I gained practical experience in using MongoDB Atlas for cloud-based deployments and familiarized myself with tools like Compass for database management.
+                I developed several backend applications to deepen my understanding of MongoDB and its practical application. I focused on designing database schemas, implementing CRUD operations, and optimizing queries for performance. Leveraging frameworks like Mongoose, I enhanced my proficiency in schema validation, middleware usage, and managing relationships between data models. Additionally, I gained practical experience in using MongoDB Atlas for cloud-based deployments and familiarized myself with tools like Compass for database management.
                 </p>
               </div>
             </div>
