@@ -36,7 +36,7 @@ const Experiance = () => {
                 </p>
               </div>
             </div>
-            <div className="border border-gray-100 rounded-md sm:p-9 p-5 ">
+            <div className="border border-gray-100 rounded-md sm:p-9 p-5 bg-zinc-800">
               <div className="flex items-center gap-8">
                 <FaNodeJs  color="#8CC84B" size={30} className="hidden sm:block" />
                 <FaNodeJs  color="#8CC84B" size={45} className="sm:hidden" />
@@ -46,7 +46,7 @@ const Experiance = () => {
               </div>
               <div className="mt-7">
                 <p className="text-white font-sora">
-                Through self-directed learning, I developed several backend applications aimed at enhancing my understanding of Node.js concepts in real-world scenarios. I focused on implementing server-side logic, building RESTful APIs, and integrating databases, primarily using frameworks such as Express.js. My proficiency grew in asynchronous programming, middleware application, and creating modular code structures within Node.js environments. Furthermore, I gained practical experience with MongoDB and other databases, and familiarized myself with essential tools like npm and Docker for containerization. This experience also allowed me to refine my skills in version control using Git and adopt best practices in project management.
+                Through self-directed learning, I developed multiple backend applications to deepen my understanding of Node.js concepts. I focused on server-side logic, RESTful API development, and database integration using Express.js. My skills expanded in asynchronous programming, middleware usage, and modular code structure within Node.js environments. Additionally, I gained practical experience with MongoDB and other databases, and familiarized myself with essential tools like npm for package management.
                 </p>
               </div>
             </div>
