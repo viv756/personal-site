@@ -12,8 +12,8 @@ const About = () => {
             <h1 className="sm:text-5xl text-4xl font-sora sm:mt-5 mt-14">
               About <span className="font-bold">Me</span>
             </h1>
-            <div className="sm:mt-9 mt-12 text-md space-y-6 text-zinc-500 font-sora">
-              <p className="">
+            <div className="mt-9 text-md space-y-6 text-zinc-500 font-sora">
+              <p>
                 I am a self-taught MERN stack developer passionate about building high-performance
                 web applications. My journey began with a curiosity for coding and a determination
                 to master MongoDB, Express.js, React, and Node.js. Through self-study, hands-on
