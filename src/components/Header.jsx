@@ -1,7 +1,7 @@
 import React from "react";
 import Logo from "../assets/logo.svg";
 import { HiMiniArrowDownTray } from "react-icons/hi2";
-import { HiMenuAlt1, HiMenuAlt3 } from "react-icons/hi";
+import { IoMdMenu, IoMdClose } from "react-icons/io";
 import { NavLinks } from "../constants";
 import ResponsiveMenu from "./ResponsiveMenu";
 
@@ -37,19 +37,11 @@ const Header = () => {
               Resume <HiMiniArrowDownTray />
             </button>
           </div>
-          <div className="pt-4 lg:hidden">
+          <div className="pt-4 lg:hidden ">
             {showMenu ? (
-              <HiMenuAlt1
-                onClick={toggleMenu}
-                className="cursor-pointer "
-                size={30}
-              />
+              <IoMdClose onClick={toggleMenu} className="cursor-pointer" size={30} />
             ) : (
-              <HiMenuAlt3
-                onClick={toggleMenu}
-                className="cursor-pointer "
-                size={30}
-              />
+              <IoMdMenu onClick={toggleMenu} className="cursor-pointer" size={30} />
             )}
           </div>
         </div>
