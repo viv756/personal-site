@@ -74,12 +74,12 @@ const Skills = () => {
         </h1>
         <div className="p-2 sm:mt-16 mt-11 min-h-[500px] w-full xl:gap-0 gap-3 grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 justify-items-center ">
           {skills.map((skill) => (
-            <div
+            <div key={skill.id}
               className={`flex flex-col justify-center items-center border-2 border-black h-[186px] w-full sm:h-[190px] sm:w-[190px] rounded-[3px] box-border transition-colors duration-300 ${
                 skillSelected === skill.id && "bg-black text-white"
               }`}
               onClick={() => setSkillSelected(skill.id)}>
-              <div key={skill.id} className="flex flex-col gap-3">
+              <div  className="flex flex-col gap-3">
                 <div className="flex justify-center py-2">{skill.icon}</div>
                 <div className="font-bold font-sora py-2 text-center">
                   {skill.name}
